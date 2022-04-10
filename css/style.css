@@ -68,8 +68,8 @@
 
 @media screen and (max-width: 390px) {
   .header .logo {
-    width: 120px;
-    height: 60px;
+    width: 150px;
+    height: 80px;
   }
 
   .header .plus {
@@ -78,7 +78,7 @@
     background-image: url(../assets/plus-solid.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    transform: translate(-500%, -250%);
+    margin-left: 20px;
   }
 }
 .footer {
@@ -96,7 +96,7 @@
 body {
   font-family: "Roboto", sans-serif;
   display: flex;
-  overflow: scroll;
+  overflow: hidden;
   height: 100vh;
   width: 100vw;
   box-sizing: border-box;
@@ -109,9 +109,27 @@ body {
   color: #ffffff;
 }
 
+.content {
+  overflow-y: scroll;
+}
+
 @media screen and (max-width: 390px) {
   .container__list {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  body.active .sidebar {
+    display: block;
+    width: 150px;
+  }
+
+  .footer {
+    position: static;
   }
 }
 
