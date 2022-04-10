@@ -1,0 +1,39 @@
+.container__description {
+    background-color: #d1cece;
+    padding: 20px;
+    margin: 0 10%;
+    text-align: center;
+    .des__title {
+        font-weight: bold;
+        padding-bottom: 15px;
+    }
+}
+
+.container__list {
+    display: flex;
+    margin: 10px 10%;
+    .container__list--item {
+        font-weight: 800;
+        .item-content {
+            font-weight: 400;
+            font-size: 13px;
+            padding-top: 10px;
+            .img {
+                background-size: contain;
+                background-repeat: no-repeat;
+                height: 50px;
+                width: 50px;
+                float: left;
+            }
+        }
+        #i1 .img {
+            background-image: url('../assets/css-icon\ 1.svg');
+        }
+        #i2 .img {
+            background-image: url('../assets/html-icon\ 1.svg');
+        }
+        #i3 .img {
+            background-image: url('../assets/url-icon\ 1.svg');
+        }
+    }
+}

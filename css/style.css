@@ -1,0 +1,118 @@
+.sidebar .sidebar__menu .sidebar__menu--item {
+  box-sizing: border-box;
+  padding: 14px 0 14px 16px;
+  border-bottom: 1px solid #AAAAAA;
+  font-size: 16px;
+  min-width: 150px;
+}
+.sidebar .sidebar__menu .sidebar__menu--item:hover {
+  background-color: #5C5C5C;
+  cursor: pointer;
+}
+.sidebar .sidebar__menu .sidebar__menu--item:active {
+  opacity: 0.8;
+}
+
+.container__description {
+  background-color: #d1cece;
+  padding: 20px;
+  margin: 0 10%;
+  text-align: center;
+}
+.container__description .des__title {
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.container__list {
+  display: flex;
+  margin: 10px 10%;
+}
+.container__list .container__list--item {
+  font-weight: 800;
+}
+.container__list .container__list--item .item-content {
+  font-weight: 400;
+  font-size: 13px;
+  padding-top: 10px;
+}
+.container__list .container__list--item .item-content .img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  float: left;
+}
+.container__list .container__list--item #i1 .img {
+  background-image: url("../assets/css-icon 1.svg");
+}
+.container__list .container__list--item #i2 .img {
+  background-image: url("../assets/html-icon 1.svg");
+}
+.container__list .container__list--item #i3 .img {
+  background-image: url("../assets/url-icon 1.svg");
+}
+
+.header {
+  height: 150px;
+  padding-top: 20px;
+}
+.header .logo {
+  background-image: url("../assets/logoNCC 1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 200px;
+  margin: auto;
+}
+
+@media screen and (max-width: 390px) {
+  .header .logo {
+    width: 120px;
+    height: 60px;
+  }
+
+  .header .plus {
+    height: 20px;
+    width: 20px;
+    background-image: url(../assets/plus-solid.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(-500%, -250%);
+  }
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  line-height: 50px;
+  padding-left: 10%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  overflow: scroll;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  background-color: #191718;
+  width: 150px;
+  height: 100vh;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 390px) {
+  .container__list {
+    flex-direction: row;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
